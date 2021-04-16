@@ -14,6 +14,7 @@
 	let showSnackbar = false;
 	let snackbarTimeout = 2000;
 	let result;
+	let showResult = 'none';
 
 	// Data
 	let images = [
@@ -41,6 +42,7 @@
 		if (selectedImage) {
 			classify(selectedImage)
 				.then((res) => {
+					showResult = 'flex';
 					result.image = selectedImage;
 					result.items = res;
 					showSnackbar = true;
@@ -49,6 +51,7 @@
 					_clearInput();
 				})
 				.catch((error) => {
+					showResult = 'none';
 					showSnackbar = true;
 					message = "Fehler! " + error;
 					snackbarColor = "error";
@@ -101,7 +104,7 @@
 				on:error={onError}
 			/>
 
-			{#if !selectedImage}
+			<!-- {#if !selectedImage} -->
 				<div class="images">
 					{#each images as image, i}
 						<img
@@ -112,11 +115,11 @@
 						/>
 					{/each}
 				</div>
-			{:else}
+			<!-- {:else} -->
 				<div class="buttons">
 					<Tooltip>
 						<div slot="activator">
-							<Button on:click={onClassify}>klassifizieren</Button
+							<Button small on:click={onClassify}>klassifizieren</Button
 							>
 						</div>
 						Ausgewähltes Bild klassifizieren.
@@ -129,16 +132,17 @@
 								light
 								block
 								outlined
+								small
 								on:click={onReset}>zurücksetzen</Button
 							>
 						</div>
 						Eingaben zurücksetzen.
 					</Tooltip>
 				</div>
-			{/if}
+			<!-- {/if} -->
 		</div>
 
-		<div class="results">
+		<div class="results" showresult={showResult}>
 			<Chart image={result.image} data={result.items} />
 		</div>
 	</main>
@@ -157,7 +161,7 @@
 
 	<footer>
 		<div>
-			<h5>Sources</h5>
+			<h5>Ressourcen</h5>
 			<a href="https://github.com/tonyflow90/dl_ea01">
 				<p>Github Repository</p>
 			</a>
@@ -167,7 +171,12 @@
 			<a href="https://developers.google.com/chart/interactive/docs">
 				<p>Google Charts</p>
 			</a>
-
+			<a href="https://svelte.dev/">
+				<p>Svelte</p>
+			</a>
+			<a href="https://smeltejs.com/">
+				<p>Smeltejs</p>
+			</a>
 			<a
 				href="https://github.com/ml5js/ml5-library/blob/main/src/utils/IMAGENET_CLASSES.js"
 			>
@@ -176,7 +185,7 @@
 		</div>
 
 		<div>
-			<h5>Images</h5>
+			<h5>Bilder</h5>
 			<a
 				href="https://www.pexels.com/de-de/foto/schwarzweiss-pinguin-der-auf-sand-geht-2078474/"
 			>
@@ -234,9 +243,16 @@
 		padding: 20px;
 	}
 
+	.buttons * {
+		max-width: 160px;
+	}
+
+	.results[showresult=none] {
+		display: none;
+	}
+
 	.results {
 		display: flex;
-		padding-top: 20px;
 	}
 
 	header {
@@ -251,11 +267,15 @@
 
 	main {
 		min-height: 65vh;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		padding: 20px 0;
 		background-color: var(--color-white-500);
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	}
+
+	main * {
+		align-self: center;
+		justify-self: center;
 	}
 
 	footer {

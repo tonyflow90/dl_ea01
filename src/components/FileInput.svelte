@@ -77,8 +77,8 @@
     }
 
     img {
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 270px;
+        max-height: 270px;
         min-width: 180px;
         min-height: 180px;
         width: 100vw;

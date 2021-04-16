@@ -28,8 +28,8 @@
 
         var options = {
             title: "Auswertung Bilderkennung",
-            width: 400,
-            height: 400,
+            width: 320,
+            height: 200,
             colors: ["#00c853", "#2962ff", "#d50000", "#9e9e9e"],
             is3D: true,
         };
@@ -49,7 +49,7 @@
 </script>
 
 <main {showresult}>
-    <h3>Ergebnis</h3>
+    <h5>Ergebnis</h5>
     {#if image}
         <img class="image" src={image.src} alt={image.name} />
     {/if}
@@ -71,8 +71,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 1em;
-        margin: 0 auto;
     }
 
     .image {
@@ -82,7 +80,7 @@
     }
 
     .chart {
-        height: 400px;
-        width: 400px;
+        height: 200px;
+        width: 320px;
     }
 </style>

@@ -1139,7 +1139,7 @@ var app = (function () {
     const file$5 = "node_modules\\smelte\\src\\components\\Button\\Button.svelte";
 
     // (153:0) {:else}
-    function create_else_block$2(ctx) {
+    function create_else_block$1(ctx) {
     	let button;
     	let t;
     	let current;
@@ -1253,7 +1253,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block: block_1,
-    		id: create_else_block$2.name,
+    		id: create_else_block$1.name,
     		type: "else",
     		source: "(153:0) {:else}",
     		ctx
@@ -1263,7 +1263,7 @@ var app = (function () {
     }
 
     // (131:0) {#if href}
-    function create_if_block$5(ctx) {
+    function create_if_block$4(ctx) {
     	let a;
     	let button;
     	let t;
@@ -1394,7 +1394,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block: block_1,
-    		id: create_if_block$5.name,
+    		id: create_if_block$4.name,
     		type: "if",
     		source: "(131:0) {#if href}",
     		ctx
@@ -1586,7 +1586,7 @@ var app = (function () {
     	let if_block;
     	let if_block_anchor;
     	let current;
-    	const if_block_creators = [create_if_block$5, create_else_block$2];
+    	const if_block_creators = [create_if_block$4, create_else_block$1];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
@@ -2401,7 +2401,7 @@ var app = (function () {
     const get_action_slot_context = ctx => ({});
 
     // (112:0) {#if value && (running === hash)}
-    function create_if_block$4(ctx) {
+    function create_if_block$3(ctx) {
     	let div2;
     	let div1;
     	let div0;
@@ -2518,7 +2518,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$4.name,
+    		id: create_if_block$3.name,
     		type: "if",
     		source: "(112:0) {#if value && (running === hash)}",
     		ctx
@@ -2747,7 +2747,7 @@ var app = (function () {
     function create_fragment$5(ctx) {
     	let if_block_anchor;
     	let current;
-    	let if_block = /*value*/ ctx[0] && running === /*hash*/ ctx[1] && create_if_block$4(ctx);
+    	let if_block = /*value*/ ctx[0] && running === /*hash*/ ctx[1] && create_if_block$3(ctx);
 
     	const block = {
     		c: function create() {
@@ -2771,7 +2771,7 @@ var app = (function () {
     						transition_in(if_block, 1);
     					}
     				} else {
-    					if_block = create_if_block$4(ctx);
+    					if_block = create_if_block$3(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -3192,7 +3192,7 @@ var app = (function () {
     const get_activator_slot_context = ctx => ({});
 
     // (78:2) {#if show}
-    function create_if_block$3(ctx) {
+    function create_if_block$2(ctx) {
     	let div;
     	let div_class_value;
     	let div_intro;
@@ -3255,7 +3255,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$3.name,
+    		id: create_if_block$2.name,
     		type: "if",
     		source: "(78:2) {#if show}",
     		ctx
@@ -3273,7 +3273,7 @@ var app = (function () {
     	let dispose;
     	const activator_slot_template = /*#slots*/ ctx[9].activator;
     	const activator_slot = create_slot(activator_slot_template, ctx, /*$$scope*/ ctx[8], get_activator_slot_context);
-    	let if_block = /*show*/ ctx[0] && create_if_block$3(ctx);
+    	let if_block = /*show*/ ctx[0] && create_if_block$2(ctx);
 
     	const block = {
     		c: function create() {
@@ -3349,7 +3349,7 @@ var app = (function () {
     						transition_in(if_block, 1);
     					}
     				} else {
-    					if_block = create_if_block$3(ctx);
+    					if_block = create_if_block$2(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
     					if_block.m(div1, null);
@@ -3593,7 +3593,7 @@ var app = (function () {
     const file_1 = "src\\components\\FileInput.svelte";
 
     // (57:4) {:else}
-    function create_else_block$1(ctx) {
+    function create_else_block(ctx) {
     	let span;
     	let t1;
     	let p;
@@ -3606,7 +3606,7 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			t2 = text(/*text*/ ctx[1]);
-    			attr_dev(span, "class", "material-icons md-48 icon svelte-7yezb2");
+    			attr_dev(span, "class", "material-icons md-48 icon svelte-nr8q3a");
     			add_location(span, file_1, 57, 8, 1641);
     			add_location(p, file_1, 58, 8, 1709);
     		},
@@ -3628,7 +3628,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$1.name,
+    		id: create_else_block.name,
     		type: "else",
     		source: "(57:4) {:else}",
     		ctx
@@ -3638,7 +3638,7 @@ var app = (function () {
     }
 
     // (55:4) {#if file}
-    function create_if_block$2(ctx) {
+    function create_if_block$1(ctx) {
     	let img;
     	let img_src_value;
     	let img_alt_value;
@@ -3646,7 +3646,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			attr_dev(img, "class", "image selected svelte-7yezb2");
+    			attr_dev(img, "class", "image selected svelte-nr8q3a");
     			if (img.src !== (img_src_value = /*file*/ ctx[0].src)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*file*/ ctx[0].alt);
     			add_location(img, file_1, 55, 8, 1558);
@@ -3670,7 +3670,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$2.name,
+    		id: create_if_block$1.name,
     		type: "if",
     		source: "(55:4) {#if file}",
     		ctx
@@ -3687,8 +3687,8 @@ var app = (function () {
     	let dispose;
 
     	function select_block_type(ctx, dirty) {
-    		if (/*file*/ ctx[0]) return create_if_block$2;
-    		return create_else_block$1;
+    		if (/*file*/ ctx[0]) return create_if_block$1;
+    		return create_else_block;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -3702,9 +3702,9 @@ var app = (function () {
     			if_block.c();
     			attr_dev(input, "type", "file");
     			attr_dev(input, "id", "fileInput");
-    			attr_dev(input, "class", "svelte-7yezb2");
+    			attr_dev(input, "class", "svelte-nr8q3a");
     			add_location(input, file_1, 53, 4, 1468);
-    			attr_dev(div, "class", "container svelte-7yezb2");
+    			attr_dev(div, "class", "container svelte-nr8q3a");
     			add_location(div, file_1, 52, 0, 1439);
     		},
     		l: function claim(nodes) {
@@ -3966,7 +3966,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			attr_dev(img, "class", "image svelte-198vsrd");
+    			attr_dev(img, "class", "image svelte-i135c3");
     			if (img.src !== (img_src_value = /*image*/ ctx[0].src)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*image*/ ctx[0].name);
     			add_location(img, file$1, 53, 8, 1358);
@@ -4000,7 +4000,7 @@ var app = (function () {
     }
 
     // (60:4) {#if !data}
-    function create_if_block$1(ctx) {
+    function create_if_block(ctx) {
     	let p;
 
     	const block = {
@@ -4019,7 +4019,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block$1.name,
+    		id: create_if_block.name,
     		type: "if",
     		source: "(60:4) {#if !data}",
     		ctx
@@ -4030,31 +4030,31 @@ var app = (function () {
 
     function create_fragment$1(ctx) {
     	let main;
-    	let h3;
+    	let h5;
     	let t1;
     	let t2;
     	let div;
     	let t3;
     	let if_block0 = /*image*/ ctx[0] && create_if_block_1(ctx);
-    	let if_block1 = !/*data*/ ctx[1] && create_if_block$1(ctx);
+    	let if_block1 = !/*data*/ ctx[1] && create_if_block(ctx);
 
     	const block = {
     		c: function create() {
     			main = element("main");
-    			h3 = element("h3");
-    			h3.textContent = "Ergebnis";
+    			h5 = element("h5");
+    			h5.textContent = "Ergebnis";
     			t1 = space();
     			if (if_block0) if_block0.c();
     			t2 = space();
     			div = element("div");
     			t3 = space();
     			if (if_block1) if_block1.c();
-    			add_location(h3, file$1, 51, 4, 1314);
-    			attr_dev(div, "class", "chart svelte-198vsrd");
+    			add_location(h5, file$1, 51, 4, 1314);
+    			attr_dev(div, "class", "chart svelte-i135c3");
     			attr_dev(div, "id", "chart_pie");
     			add_location(div, file$1, 56, 4, 1431);
     			attr_dev(main, "showresult", /*showresult*/ ctx[2]);
-    			attr_dev(main, "class", "svelte-198vsrd");
+    			attr_dev(main, "class", "svelte-i135c3");
     			add_location(main, file$1, 50, 0, 1289);
     		},
     		l: function claim(nodes) {
@@ -4062,7 +4062,7 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, main, anchor);
-    			append_dev(main, h3);
+    			append_dev(main, h5);
     			append_dev(main, t1);
     			if (if_block0) if_block0.m(main, null);
     			append_dev(main, t2);
@@ -4086,7 +4086,7 @@ var app = (function () {
 
     			if (!/*data*/ ctx[1]) {
     				if (if_block1) ; else {
-    					if_block1 = create_if_block$1(ctx);
+    					if_block1 = create_if_block(ctx);
     					if_block1.c();
     					if_block1.m(main, null);
     				}
@@ -4153,8 +4153,8 @@ var app = (function () {
 
     		var options = {
     			title: "Auswertung Bilderkennung",
-    			width: 400,
-    			height: 400,
+    			width: 320,
+    			height: 200,
     			colors: ["#00c853", "#2962ff", "#d50000", "#9e9e9e"],
     			is3D: true
     		};
@@ -4246,176 +4246,54 @@ var app = (function () {
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[20] = list[i];
-    	child_ctx[22] = i;
+    	child_ctx[21] = list[i];
+    	child_ctx[23] = i;
     	return child_ctx;
     }
 
-    // (115:3) {:else}
-    function create_else_block(ctx) {
-    	let div;
-    	let tooltip0;
-    	let t;
-    	let tooltip1;
-    	let current;
-
-    	tooltip0 = new Tooltip({
-    			props: {
-    				$$slots: {
-    					activator: [create_activator_slot_1],
-    					default: [create_default_slot_5]
-    				},
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	tooltip1 = new Tooltip({
-    			props: {
-    				$$slots: {
-    					activator: [create_activator_slot],
-    					default: [create_default_slot_3]
-    				},
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
+    // (109:5) {#each images as image, i}
+    function create_each_block(ctx) {
+    	let img;
+    	let img_src_value;
+    	let mounted;
+    	let dispose;
 
     	const block = {
     		c: function create() {
-    			div = element("div");
-    			create_component(tooltip0.$$.fragment);
-    			t = space();
-    			create_component(tooltip1.$$.fragment);
-    			attr_dev(div, "class", "buttons svelte-jbotca");
-    			add_location(div, file, 115, 4, 2551);
+    			img = element("img");
+    			attr_dev(img, "class", "image preview svelte-10a1q5");
+    			if (img.src !== (img_src_value = /*image*/ ctx[21].src)) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", /*image*/ ctx[21].name);
+    			add_location(img, file, 109, 6, 2464);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			mount_component(tooltip0, div, null);
-    			append_dev(div, t);
-    			mount_component(tooltip1, div, null);
-    			current = true;
-    		},
-    		p: function update(ctx, dirty) {
-    			const tooltip0_changes = {};
+    			insert_dev(target, img, anchor);
 
-    			if (dirty & /*$$scope*/ 8388608) {
-    				tooltip0_changes.$$scope = { dirty, ctx };
+    			if (!mounted) {
+    				dispose = listen_dev(img, "click", /*onSelectPreviewImage*/ ctx[11], false, false, false);
+    				mounted = true;
     			}
-
-    			tooltip0.$set(tooltip0_changes);
-    			const tooltip1_changes = {};
-
-    			if (dirty & /*$$scope*/ 8388608) {
-    				tooltip1_changes.$$scope = { dirty, ctx };
-    			}
-
-    			tooltip1.$set(tooltip1_changes);
     		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(tooltip0.$$.fragment, local);
-    			transition_in(tooltip1.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(tooltip0.$$.fragment, local);
-    			transition_out(tooltip1.$$.fragment, local);
-    			current = false;
-    		},
+    		p: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			destroy_component(tooltip0);
-    			destroy_component(tooltip1);
+    			if (detaching) detach_dev(img);
+    			mounted = false;
+    			dispose();
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block.name,
-    		type: "else",
-    		source: "(115:3) {:else}",
+    		id: create_each_block.name,
+    		type: "each",
+    		source: "(109:5) {#each images as image, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (104:3) {#if !selectedImage}
-    function create_if_block(ctx) {
-    	let div;
-    	let each_value = /*images*/ ctx[6];
-    	validate_each_argument(each_value);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-    	}
-
-    	const block = {
-    		c: function create() {
-    			div = element("div");
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].c();
-    			}
-
-    			attr_dev(div, "class", "images svelte-jbotca");
-    			add_location(div, file, 104, 4, 2313);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-
-    			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div, null);
-    			}
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*images, onSelectPreviewImage*/ 1088) {
-    				each_value = /*images*/ ctx[6];
-    				validate_each_argument(each_value);
-    				let i;
-
-    				for (i = 0; i < each_value.length; i += 1) {
-    					const child_ctx = get_each_context(ctx, each_value, i);
-
-    					if (each_blocks[i]) {
-    						each_blocks[i].p(child_ctx, dirty);
-    					} else {
-    						each_blocks[i] = create_each_block(child_ctx);
-    						each_blocks[i].c();
-    						each_blocks[i].m(div, null);
-    					}
-    				}
-
-    				for (; i < each_blocks.length; i += 1) {
-    					each_blocks[i].d(1);
-    				}
-
-    				each_blocks.length = each_value.length;
-    			}
-    		},
-    		i: noop,
-    		o: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			destroy_each(each_blocks, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_if_block.name,
-    		type: "if",
-    		source: "(104:3) {#if !selectedImage}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (117:5) <Tooltip>
+    // (120:5) <Tooltip>
     function create_default_slot_5(ctx) {
     	let t;
 
@@ -4435,14 +4313,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(117:5) <Tooltip>",
+    		source: "(120:5) <Tooltip>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (119:7) <Button on:click={onClassify}>
+    // (122:7) <Button small on:click={onClassify}>
     function create_default_slot_4(ctx) {
     	let t;
 
@@ -4462,14 +4340,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(119:7) <Button on:click={onClassify}>",
+    		source: "(122:7) <Button small on:click={onClassify}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (118:6) 
+    // (121:6) 
     function create_activator_slot_1(ctx) {
     	let div;
     	let button;
@@ -4477,20 +4355,22 @@ var app = (function () {
 
     	button = new Button({
     			props: {
+    				small: true,
     				$$slots: { default: [create_default_slot_4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
-    	button.$on("click", /*onClassify*/ ctx[11]);
+    	button.$on("click", /*onClassify*/ ctx[12]);
 
     	const block = {
     		c: function create() {
     			div = element("div");
     			create_component(button.$$.fragment);
     			attr_dev(div, "slot", "activator");
-    			add_location(div, file, 117, 6, 2596);
+    			attr_dev(div, "class", "svelte-10a1q5");
+    			add_location(div, file, 120, 6, 2695);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4500,7 +4380,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 8388608) {
+    			if (dirty & /*$$scope*/ 16777216) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
@@ -4525,14 +4405,14 @@ var app = (function () {
     		block,
     		id: create_activator_slot_1.name,
     		type: "slot",
-    		source: "(118:6) ",
+    		source: "(121:6) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (125:5) <Tooltip>
+    // (128:5) <Tooltip>
     function create_default_slot_3(ctx) {
     	let t;
 
@@ -4552,14 +4432,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(125:5) <Tooltip>",
+    		source: "(128:5) <Tooltip>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (127:7) <Button          color="secondary"          light          block          outlined          on:click={onReset}>
+    // (130:7) <Button          color="secondary"          light          block          outlined          small          on:click={onReset}>
     function create_default_slot_2(ctx) {
     	let t;
 
@@ -4579,14 +4459,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(127:7) <Button          color=\\\"secondary\\\"          light          block          outlined          on:click={onReset}>",
+    		source: "(130:7) <Button          color=\\\"secondary\\\"          light          block          outlined          small          on:click={onReset}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (126:6) 
+    // (129:6) 
     function create_activator_slot(ctx) {
     	let div;
     	let button;
@@ -4598,20 +4478,22 @@ var app = (function () {
     				light: true,
     				block: true,
     				outlined: true,
+    				small: true,
     				$$slots: { default: [create_default_slot_2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
-    	button.$on("click", /*onReset*/ ctx[13]);
+    	button.$on("click", /*onReset*/ ctx[14]);
 
     	const block = {
     		c: function create() {
     			div = element("div");
     			create_component(button.$$.fragment);
     			attr_dev(div, "slot", "activator");
-    			add_location(div, file, 125, 6, 2787);
+    			attr_dev(div, "class", "svelte-10a1q5");
+    			add_location(div, file, 128, 6, 2892);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4621,7 +4503,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 8388608) {
+    			if (dirty & /*$$scope*/ 16777216) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
@@ -4646,56 +4528,14 @@ var app = (function () {
     		block,
     		id: create_activator_slot.name,
     		type: "slot",
-    		source: "(126:6) ",
+    		source: "(129:6) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (106:5) {#each images as image, i}
-    function create_each_block(ctx) {
-    	let img;
-    	let img_src_value;
-    	let mounted;
-    	let dispose;
-
-    	const block = {
-    		c: function create() {
-    			img = element("img");
-    			attr_dev(img, "class", "image preview svelte-jbotca");
-    			if (img.src !== (img_src_value = /*image*/ ctx[20].src)) attr_dev(img, "src", img_src_value);
-    			attr_dev(img, "alt", /*image*/ ctx[20].name);
-    			add_location(img, file, 106, 6, 2374);
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, img, anchor);
-
-    			if (!mounted) {
-    				dispose = listen_dev(img, "click", /*onSelectPreviewImage*/ ctx[10], false, false, false);
-    				mounted = true;
-    			}
-    		},
-    		p: noop,
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(img);
-    			mounted = false;
-    			dispose();
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_each_block.name,
-    		type: "each",
-    		source: "(106:5) {#each images as image, i}",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (146:1) <Snackbar    bind:value={showSnackbar}    noAction    color={snackbarColor}    timeout={snackbarTimeout}   >
+    // (150:1) <Snackbar    bind:value={showSnackbar}    noAction    color={snackbarColor}    timeout={snackbarTimeout}   >
     function create_default_slot_1(ctx) {
     	let div;
     	let t;
@@ -4703,15 +4543,15 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			t = text(/*message*/ ctx[4]);
-    			add_location(div, file, 151, 2, 3271);
+    			t = text(/*message*/ ctx[5]);
+    			add_location(div, file, 155, 2, 3424);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
     			append_dev(div, t);
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*message*/ 16) set_data_dev(t, /*message*/ ctx[4]);
+    			if (dirty & /*message*/ 32) set_data_dev(t, /*message*/ ctx[5]);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div);
@@ -4722,14 +4562,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(146:1) <Snackbar    bind:value={showSnackbar}    noAction    color={snackbarColor}    timeout={snackbarTimeout}   >",
+    		source: "(150:1) <Snackbar    bind:value={showSnackbar}    noAction    color={snackbarColor}    timeout={snackbarTimeout}   >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (154:3) <Button on:click={() => (showSnackbar = false)}>
+    // (158:3) <Button on:click={() => (showSnackbar = false)}>
     function create_default_slot(ctx) {
     	let t;
 
@@ -4749,14 +4589,14 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(154:3) <Button on:click={() => (showSnackbar = false)}>",
+    		source: "(158:3) <Button on:click={() => (showSnackbar = false)}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (153:2) 
+    // (157:2) 
     function create_action_slot(ctx) {
     	let div;
     	let button;
@@ -4770,14 +4610,14 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	button.$on("click", /*click_handler*/ ctx[15]);
+    	button.$on("click", /*click_handler*/ ctx[16]);
 
     	const block = {
     		c: function create() {
     			div = element("div");
     			create_component(button.$$.fragment);
     			attr_dev(div, "slot", "action");
-    			add_location(div, file, 152, 2, 3295);
+    			add_location(div, file, 156, 2, 3448);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4787,7 +4627,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const button_changes = {};
 
-    			if (dirty & /*$$scope*/ 8388608) {
+    			if (dirty & /*$$scope*/ 16777216) {
     				button_changes.$$scope = { dirty, ctx };
     			}
 
@@ -4812,7 +4652,7 @@ var app = (function () {
     		block,
     		id: create_action_slot.name,
     		type: "slot",
-    		source: "(153:2) ",
+    		source: "(157:2) ",
     		ctx
     	});
 
@@ -4829,37 +4669,38 @@ var app = (function () {
     	let h3;
     	let t5;
     	let main;
-    	let div0;
+    	let div2;
     	let fileinput;
     	let updating_file;
     	let t6;
-    	let current_block_type_index;
-    	let if_block;
+    	let div0;
     	let t7;
     	let div1;
-    	let chart;
+    	let tooltip0;
     	let t8;
+    	let tooltip1;
+    	let t9;
+    	let div3;
+    	let chart;
+    	let t10;
     	let snackbar;
     	let updating_value;
-    	let t9;
-    	let footer;
-    	let div2;
-    	let h51;
     	let t11;
+    	let footer;
+    	let div4;
+    	let h51;
+    	let t13;
     	let a0;
     	let p0;
-    	let t13;
+    	let t15;
     	let a1;
     	let p1;
-    	let t15;
+    	let t17;
     	let a2;
     	let p2;
-    	let t17;
+    	let t19;
     	let a3;
     	let p3;
-    	let t19;
-    	let div3;
-    	let h52;
     	let t21;
     	let a4;
     	let p4;
@@ -4867,22 +4708,31 @@ var app = (function () {
     	let a5;
     	let p5;
     	let t25;
+    	let div5;
+    	let h52;
+    	let t27;
     	let a6;
     	let p6;
-    	let t27;
+    	let t29;
     	let a7;
     	let p7;
-    	let t29;
+    	let t31;
     	let a8;
     	let p8;
+    	let t33;
+    	let a9;
+    	let p9;
+    	let t35;
+    	let a10;
+    	let p10;
     	let current;
     	imageclassifier = new ImageClassifier({ $$inline: true });
 
     	function fileinput_file_binding(value) {
-    		/*fileinput_file_binding*/ ctx[14](value);
+    		/*fileinput_file_binding*/ ctx[15](value);
     	}
 
-    	let fileinput_props = { text: /*imageContainerText*/ ctx[7] };
+    	let fileinput_props = { text: /*imageContainerText*/ ctx[8] };
 
     	if (/*selectedImage*/ ctx[0] !== void 0) {
     		fileinput_props.file = /*selectedImage*/ ctx[0];
@@ -4890,17 +4740,36 @@ var app = (function () {
 
     	fileinput = new FileInput({ props: fileinput_props, $$inline: true });
     	binding_callbacks.push(() => bind(fileinput, "file", fileinput_file_binding));
-    	fileinput.$on("error", /*onError*/ ctx[12]);
-    	const if_block_creators = [create_if_block, create_else_block];
-    	const if_blocks = [];
+    	fileinput.$on("error", /*onError*/ ctx[13]);
+    	let each_value = /*images*/ ctx[7];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
 
-    	function select_block_type(ctx, dirty) {
-    		if (!/*selectedImage*/ ctx[0]) return 0;
-    		return 1;
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
     	}
 
-    	current_block_type_index = select_block_type(ctx);
-    	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    	tooltip0 = new Tooltip({
+    			props: {
+    				$$slots: {
+    					activator: [create_activator_slot_1],
+    					default: [create_default_slot_5]
+    				},
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	tooltip1 = new Tooltip({
+    			props: {
+    				$$slots: {
+    					activator: [create_activator_slot],
+    					default: [create_default_slot_3]
+    				},
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
 
     	chart = new Chart({
     			props: {
@@ -4911,13 +4780,13 @@ var app = (function () {
     		});
 
     	function snackbar_value_binding(value) {
-    		/*snackbar_value_binding*/ ctx[16](value);
+    		/*snackbar_value_binding*/ ctx[17](value);
     	}
 
     	let snackbar_props = {
     		noAction: true,
-    		color: /*snackbarColor*/ ctx[3],
-    		timeout: /*snackbarTimeout*/ ctx[5],
+    		color: /*snackbarColor*/ ctx[4],
+    		timeout: /*snackbarTimeout*/ ctx[6],
     		$$slots: {
     			action: [create_action_slot],
     			default: [create_default_slot_1]
@@ -4939,122 +4808,154 @@ var app = (function () {
     			t0 = space();
     			header = element("header");
     			h50 = element("h5");
-    			h50.textContent = `Einsendeaufgabe ${/*taskNumber*/ ctx[9]}`;
+    			h50.textContent = `Einsendeaufgabe ${/*taskNumber*/ ctx[10]}`;
     			t3 = space();
     			h3 = element("h3");
-    			h3.textContent = `${/*taskTitle*/ ctx[8]}`;
+    			h3.textContent = `${/*taskTitle*/ ctx[9]}`;
     			t5 = space();
     			main = element("main");
-    			div0 = element("div");
+    			div2 = element("div");
     			create_component(fileinput.$$.fragment);
     			t6 = space();
-    			if_block.c();
+    			div0 = element("div");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
     			t7 = space();
     			div1 = element("div");
-    			create_component(chart.$$.fragment);
+    			create_component(tooltip0.$$.fragment);
     			t8 = space();
-    			create_component(snackbar.$$.fragment);
+    			create_component(tooltip1.$$.fragment);
     			t9 = space();
-    			footer = element("footer");
-    			div2 = element("div");
-    			h51 = element("h5");
-    			h51.textContent = "Sources";
+    			div3 = element("div");
+    			create_component(chart.$$.fragment);
+    			t10 = space();
+    			create_component(snackbar.$$.fragment);
     			t11 = space();
+    			footer = element("footer");
+    			div4 = element("div");
+    			h51 = element("h5");
+    			h51.textContent = "Ressourcen";
+    			t13 = space();
     			a0 = element("a");
     			p0 = element("p");
     			p0.textContent = "Github Repository";
-    			t13 = space();
+    			t15 = space();
     			a1 = element("a");
     			p1 = element("p");
     			p1.textContent = "ml5js";
-    			t15 = space();
+    			t17 = space();
     			a2 = element("a");
     			p2 = element("p");
     			p2.textContent = "Google Charts";
-    			t17 = space();
+    			t19 = space();
     			a3 = element("a");
     			p3 = element("p");
-    			p3.textContent = "ml5js IMAGENET_CLASSES";
-    			t19 = space();
-    			div3 = element("div");
-    			h52 = element("h5");
-    			h52.textContent = "Images";
+    			p3.textContent = "Svelte";
     			t21 = space();
     			a4 = element("a");
     			p4 = element("p");
-    			p4.textContent = "penguin";
+    			p4.textContent = "Smeltejs";
     			t23 = space();
     			a5 = element("a");
     			p5 = element("p");
-    			p5.textContent = "maltese";
+    			p5.textContent = "ml5js IMAGENET_CLASSES";
     			t25 = space();
+    			div5 = element("div");
+    			h52 = element("h5");
+    			h52.textContent = "Bilder";
+    			t27 = space();
     			a6 = element("a");
     			p6 = element("p");
-    			p6.textContent = "espresso";
-    			t27 = space();
+    			p6.textContent = "penguin";
+    			t29 = space();
     			a7 = element("a");
     			p7 = element("p");
-    			p7.textContent = "gecko";
-    			t29 = space();
+    			p7.textContent = "maltese";
+    			t31 = space();
     			a8 = element("a");
     			p8 = element("p");
-    			p8.textContent = "stopwatch";
-    			attr_dev(h50, "class", "svelte-jbotca");
-    			add_location(h50, file, 91, 2, 2079);
-    			attr_dev(h3, "class", "svelte-jbotca");
-    			add_location(h3, file, 92, 2, 2120);
-    			attr_dev(header, "class", "svelte-jbotca");
-    			add_location(header, file, 90, 1, 2067);
-    			add_location(div0, file, 96, 2, 2167);
-    			attr_dev(div1, "class", "results svelte-jbotca");
-    			add_location(div1, file, 140, 2, 3058);
-    			attr_dev(main, "class", "svelte-jbotca");
-    			add_location(main, file, 95, 1, 2157);
-    			attr_dev(h51, "class", "svelte-jbotca");
-    			add_location(h51, file, 159, 3, 3432);
-    			attr_dev(p0, "class", "svelte-jbotca");
-    			add_location(p0, file, 161, 4, 3507);
+    			p8.textContent = "espresso";
+    			t33 = space();
+    			a9 = element("a");
+    			p9 = element("p");
+    			p9.textContent = "gecko";
+    			t35 = space();
+    			a10 = element("a");
+    			p10 = element("p");
+    			p10.textContent = "stopwatch";
+    			attr_dev(h50, "class", "svelte-10a1q5");
+    			add_location(h50, file, 94, 2, 2160);
+    			attr_dev(h3, "class", "svelte-10a1q5");
+    			add_location(h3, file, 95, 2, 2201);
+    			attr_dev(header, "class", "svelte-10a1q5");
+    			add_location(header, file, 93, 1, 2148);
+    			attr_dev(div0, "class", "images svelte-10a1q5");
+    			add_location(div0, file, 107, 4, 2403);
+    			attr_dev(div1, "class", "buttons svelte-10a1q5");
+    			add_location(div1, file, 118, 4, 2650);
+    			attr_dev(div2, "class", "svelte-10a1q5");
+    			add_location(div2, file, 99, 2, 2248);
+    			attr_dev(div3, "class", "results svelte-10a1q5");
+    			attr_dev(div3, "showresult", /*showResult*/ ctx[3]);
+    			add_location(div3, file, 144, 2, 3187);
+    			attr_dev(main, "class", "svelte-10a1q5");
+    			add_location(main, file, 98, 1, 2238);
+    			attr_dev(h51, "class", "svelte-10a1q5");
+    			add_location(h51, file, 163, 3, 3585);
+    			attr_dev(p0, "class", "svelte-10a1q5");
+    			add_location(p0, file, 165, 4, 3663);
     			attr_dev(a0, "href", "https://github.com/tonyflow90/dl_ea01");
-    			add_location(a0, file, 160, 3, 3453);
-    			attr_dev(p1, "class", "svelte-jbotca");
-    			add_location(p1, file, 164, 4, 3580);
+    			add_location(a0, file, 164, 3, 3609);
+    			attr_dev(p1, "class", "svelte-10a1q5");
+    			add_location(p1, file, 168, 4, 3736);
     			attr_dev(a1, "href", "https://ml5js.org/");
-    			add_location(a1, file, 163, 3, 3545);
-    			attr_dev(p2, "class", "svelte-jbotca");
-    			add_location(p2, file, 167, 4, 3675);
+    			add_location(a1, file, 167, 3, 3701);
+    			attr_dev(p2, "class", "svelte-10a1q5");
+    			add_location(p2, file, 171, 4, 3831);
     			attr_dev(a2, "href", "https://developers.google.com/chart/interactive/docs");
-    			add_location(a2, file, 166, 3, 3606);
-    			attr_dev(p3, "class", "svelte-jbotca");
-    			add_location(p3, file, 173, 4, 3814);
-    			attr_dev(a3, "href", "https://github.com/ml5js/ml5-library/blob/main/src/utils/IMAGENET_CLASSES.js");
-    			add_location(a3, file, 170, 3, 3711);
-    			add_location(div2, file, 158, 2, 3422);
-    			attr_dev(h52, "class", "svelte-jbotca");
-    			add_location(h52, file, 178, 3, 3878);
-    			attr_dev(p4, "class", "svelte-jbotca");
-    			add_location(p4, file, 182, 4, 4006);
-    			attr_dev(a4, "href", "https://www.pexels.com/de-de/foto/schwarzweiss-pinguin-der-auf-sand-geht-2078474/");
-    			add_location(a4, file, 179, 3, 3898);
-    			attr_dev(p5, "class", "svelte-jbotca");
-    			add_location(p5, file, 187, 4, 4126);
-    			attr_dev(a5, "href", "https://www.pexels.com/de-de/foto/meer-natur-ferien-sand-6528245/");
-    			add_location(a5, file, 184, 3, 4034);
-    			attr_dev(p6, "class", "svelte-jbotca");
-    			add_location(p6, file, 192, 4, 4264);
-    			attr_dev(a6, "href", "https://www.pexels.com/de-de/foto/koffein-kaffee-espresso-schwarzer-kaffee-1233528/");
-    			add_location(a6, file, 189, 3, 4154);
-    			attr_dev(p7, "class", "svelte-jbotca");
-    			add_location(p7, file, 197, 4, 4404);
-    			attr_dev(a7, "href", "https://www.pexels.com/de-de/foto/grunes-chamaleon-auf-schwarzer-oberflache-3779926/");
-    			add_location(a7, file, 194, 3, 4293);
-    			attr_dev(p8, "class", "svelte-jbotca");
-    			add_location(p8, file, 202, 4, 4522);
-    			attr_dev(a8, "href", "https://www.pexels.com/de-de/foto/vintage-zeit-uhr-timer-5563414/");
-    			add_location(a8, file, 199, 3, 4430);
-    			add_location(div3, file, 177, 2, 3868);
-    			attr_dev(footer, "class", "svelte-jbotca");
-    			add_location(footer, file, 157, 1, 3410);
-    			add_location(app, file, 87, 0, 2035);
+    			add_location(a2, file, 170, 3, 3762);
+    			attr_dev(p3, "class", "svelte-10a1q5");
+    			add_location(p3, file, 174, 4, 3901);
+    			attr_dev(a3, "href", "https://svelte.dev/");
+    			add_location(a3, file, 173, 3, 3865);
+    			attr_dev(p4, "class", "svelte-10a1q5");
+    			add_location(p4, file, 177, 4, 3966);
+    			attr_dev(a4, "href", "https://smeltejs.com/");
+    			add_location(a4, file, 176, 3, 3928);
+    			attr_dev(p5, "class", "svelte-10a1q5");
+    			add_location(p5, file, 182, 4, 4098);
+    			attr_dev(a5, "href", "https://github.com/ml5js/ml5-library/blob/main/src/utils/IMAGENET_CLASSES.js");
+    			add_location(a5, file, 179, 3, 3995);
+    			add_location(div4, file, 162, 2, 3575);
+    			attr_dev(h52, "class", "svelte-10a1q5");
+    			add_location(h52, file, 187, 3, 4162);
+    			attr_dev(p6, "class", "svelte-10a1q5");
+    			add_location(p6, file, 191, 4, 4290);
+    			attr_dev(a6, "href", "https://www.pexels.com/de-de/foto/schwarzweiss-pinguin-der-auf-sand-geht-2078474/");
+    			add_location(a6, file, 188, 3, 4182);
+    			attr_dev(p7, "class", "svelte-10a1q5");
+    			add_location(p7, file, 196, 4, 4410);
+    			attr_dev(a7, "href", "https://www.pexels.com/de-de/foto/meer-natur-ferien-sand-6528245/");
+    			add_location(a7, file, 193, 3, 4318);
+    			attr_dev(p8, "class", "svelte-10a1q5");
+    			add_location(p8, file, 201, 4, 4548);
+    			attr_dev(a8, "href", "https://www.pexels.com/de-de/foto/koffein-kaffee-espresso-schwarzer-kaffee-1233528/");
+    			add_location(a8, file, 198, 3, 4438);
+    			attr_dev(p9, "class", "svelte-10a1q5");
+    			add_location(p9, file, 206, 4, 4688);
+    			attr_dev(a9, "href", "https://www.pexels.com/de-de/foto/grunes-chamaleon-auf-schwarzer-oberflache-3779926/");
+    			add_location(a9, file, 203, 3, 4577);
+    			attr_dev(p10, "class", "svelte-10a1q5");
+    			add_location(p10, file, 211, 4, 4806);
+    			attr_dev(a10, "href", "https://www.pexels.com/de-de/foto/vintage-zeit-uhr-timer-5563414/");
+    			add_location(a10, file, 208, 3, 4714);
+    			add_location(div5, file, 186, 2, 4152);
+    			attr_dev(footer, "class", "svelte-10a1q5");
+    			add_location(footer, file, 161, 1, 3563);
+    			add_location(app, file, 90, 0, 2116);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5069,49 +4970,65 @@ var app = (function () {
     			append_dev(header, h3);
     			append_dev(app, t5);
     			append_dev(app, main);
-    			append_dev(main, div0);
-    			mount_component(fileinput, div0, null);
-    			append_dev(div0, t6);
-    			if_blocks[current_block_type_index].m(div0, null);
-    			append_dev(main, t7);
-    			append_dev(main, div1);
-    			mount_component(chart, div1, null);
-    			append_dev(app, t8);
+    			append_dev(main, div2);
+    			mount_component(fileinput, div2, null);
+    			append_dev(div2, t6);
+    			append_dev(div2, div0);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(div0, null);
+    			}
+
+    			append_dev(div2, t7);
+    			append_dev(div2, div1);
+    			mount_component(tooltip0, div1, null);
+    			append_dev(div1, t8);
+    			mount_component(tooltip1, div1, null);
+    			append_dev(main, t9);
+    			append_dev(main, div3);
+    			mount_component(chart, div3, null);
+    			append_dev(app, t10);
     			mount_component(snackbar, app, null);
-    			append_dev(app, t9);
+    			append_dev(app, t11);
     			append_dev(app, footer);
-    			append_dev(footer, div2);
-    			append_dev(div2, h51);
-    			append_dev(div2, t11);
-    			append_dev(div2, a0);
+    			append_dev(footer, div4);
+    			append_dev(div4, h51);
+    			append_dev(div4, t13);
+    			append_dev(div4, a0);
     			append_dev(a0, p0);
-    			append_dev(div2, t13);
-    			append_dev(div2, a1);
+    			append_dev(div4, t15);
+    			append_dev(div4, a1);
     			append_dev(a1, p1);
-    			append_dev(div2, t15);
-    			append_dev(div2, a2);
+    			append_dev(div4, t17);
+    			append_dev(div4, a2);
     			append_dev(a2, p2);
-    			append_dev(div2, t17);
-    			append_dev(div2, a3);
+    			append_dev(div4, t19);
+    			append_dev(div4, a3);
     			append_dev(a3, p3);
-    			append_dev(footer, t19);
-    			append_dev(footer, div3);
-    			append_dev(div3, h52);
-    			append_dev(div3, t21);
-    			append_dev(div3, a4);
+    			append_dev(div4, t21);
+    			append_dev(div4, a4);
     			append_dev(a4, p4);
-    			append_dev(div3, t23);
-    			append_dev(div3, a5);
+    			append_dev(div4, t23);
+    			append_dev(div4, a5);
     			append_dev(a5, p5);
-    			append_dev(div3, t25);
-    			append_dev(div3, a6);
+    			append_dev(footer, t25);
+    			append_dev(footer, div5);
+    			append_dev(div5, h52);
+    			append_dev(div5, t27);
+    			append_dev(div5, a6);
     			append_dev(a6, p6);
-    			append_dev(div3, t27);
-    			append_dev(div3, a7);
+    			append_dev(div5, t29);
+    			append_dev(div5, a7);
     			append_dev(a7, p7);
-    			append_dev(div3, t29);
-    			append_dev(div3, a8);
+    			append_dev(div5, t31);
+    			append_dev(div5, a8);
     			append_dev(a8, p8);
+    			append_dev(div5, t33);
+    			append_dev(div5, a9);
+    			append_dev(a9, p9);
+    			append_dev(div5, t35);
+    			append_dev(div5, a10);
+    			append_dev(a10, p10);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -5124,40 +5041,58 @@ var app = (function () {
     			}
 
     			fileinput.$set(fileinput_changes);
-    			let previous_block_index = current_block_type_index;
-    			current_block_type_index = select_block_type(ctx);
 
-    			if (current_block_type_index === previous_block_index) {
-    				if_blocks[current_block_type_index].p(ctx, dirty);
-    			} else {
-    				group_outros();
+    			if (dirty & /*images, onSelectPreviewImage*/ 2176) {
+    				each_value = /*images*/ ctx[7];
+    				validate_each_argument(each_value);
+    				let i;
 
-    				transition_out(if_blocks[previous_block_index], 1, 1, () => {
-    					if_blocks[previous_block_index] = null;
-    				});
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context(ctx, each_value, i);
 
-    				check_outros();
-    				if_block = if_blocks[current_block_type_index];
-
-    				if (!if_block) {
-    					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-    					if_block.c();
-    				} else {
-    					if_block.p(ctx, dirty);
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(div0, null);
+    					}
     				}
 
-    				transition_in(if_block, 1);
-    				if_block.m(div0, null);
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value.length;
     			}
 
+    			const tooltip0_changes = {};
+
+    			if (dirty & /*$$scope*/ 16777216) {
+    				tooltip0_changes.$$scope = { dirty, ctx };
+    			}
+
+    			tooltip0.$set(tooltip0_changes);
+    			const tooltip1_changes = {};
+
+    			if (dirty & /*$$scope*/ 16777216) {
+    				tooltip1_changes.$$scope = { dirty, ctx };
+    			}
+
+    			tooltip1.$set(tooltip1_changes);
     			const chart_changes = {};
     			if (dirty & /*result*/ 4) chart_changes.image = /*result*/ ctx[2].image;
     			if (dirty & /*result*/ 4) chart_changes.data = /*result*/ ctx[2].items;
     			chart.$set(chart_changes);
-    			const snackbar_changes = {};
-    			if (dirty & /*snackbarColor*/ 8) snackbar_changes.color = /*snackbarColor*/ ctx[3];
 
-    			if (dirty & /*$$scope, showSnackbar, message*/ 8388626) {
+    			if (!current || dirty & /*showResult*/ 8) {
+    				attr_dev(div3, "showresult", /*showResult*/ ctx[3]);
+    			}
+
+    			const snackbar_changes = {};
+    			if (dirty & /*snackbarColor*/ 16) snackbar_changes.color = /*snackbarColor*/ ctx[4];
+
+    			if (dirty & /*$$scope, showSnackbar, message*/ 16777250) {
     				snackbar_changes.$$scope = { dirty, ctx };
     			}
 
@@ -5173,7 +5108,8 @@ var app = (function () {
     			if (current) return;
     			transition_in(imageclassifier.$$.fragment, local);
     			transition_in(fileinput.$$.fragment, local);
-    			transition_in(if_block);
+    			transition_in(tooltip0.$$.fragment, local);
+    			transition_in(tooltip1.$$.fragment, local);
     			transition_in(chart.$$.fragment, local);
     			transition_in(snackbar.$$.fragment, local);
     			current = true;
@@ -5181,7 +5117,8 @@ var app = (function () {
     		o: function outro(local) {
     			transition_out(imageclassifier.$$.fragment, local);
     			transition_out(fileinput.$$.fragment, local);
-    			transition_out(if_block);
+    			transition_out(tooltip0.$$.fragment, local);
+    			transition_out(tooltip1.$$.fragment, local);
     			transition_out(chart.$$.fragment, local);
     			transition_out(snackbar.$$.fragment, local);
     			current = false;
@@ -5190,7 +5127,9 @@ var app = (function () {
     			if (detaching) detach_dev(app);
     			destroy_component(imageclassifier);
     			destroy_component(fileinput);
-    			if_blocks[current_block_type_index].d();
+    			destroy_each(each_blocks, detaching);
+    			destroy_component(tooltip0);
+    			destroy_component(tooltip1);
     			destroy_component(chart);
     			destroy_component(snackbar);
     		}
@@ -5214,6 +5153,7 @@ var app = (function () {
     	let showSnackbar = false;
     	let snackbarTimeout = 2000;
     	let result;
+    	let showResult = "none";
 
     	// Data
     	let images = [
@@ -5252,28 +5192,30 @@ var app = (function () {
     	let onClassify = () => {
     		if (selectedImage) {
     			classify(selectedImage).then(res => {
+    				$$invalidate(3, showResult = "flex");
     				$$invalidate(2, result.image = selectedImage, result);
     				$$invalidate(2, result.items = res, result);
     				$$invalidate(1, showSnackbar = true);
-    				$$invalidate(4, message = "Klassifizierung erfoglreich.");
-    				$$invalidate(3, snackbarColor = "success");
+    				$$invalidate(5, message = "Klassifizierung erfoglreich.");
+    				$$invalidate(4, snackbarColor = "success");
     				_clearInput();
     			}).catch(error => {
+    				$$invalidate(3, showResult = "none");
     				$$invalidate(1, showSnackbar = true);
-    				$$invalidate(4, message = "Fehler! " + error);
-    				$$invalidate(3, snackbarColor = "error");
+    				$$invalidate(5, message = "Fehler! " + error);
+    				$$invalidate(4, snackbarColor = "error");
     			});
     		} else {
     			$$invalidate(1, showSnackbar = true);
-    			$$invalidate(4, message = "Fehler! Es wurde kein Bild ausgewählt!");
-    			$$invalidate(3, snackbarColor = "error");
+    			$$invalidate(5, message = "Fehler! Es wurde kein Bild ausgewählt!");
+    			$$invalidate(4, snackbarColor = "error");
     		}
     	};
 
     	let onError = e => {
     		$$invalidate(1, showSnackbar = true);
-    		$$invalidate(4, message = e.detail.message);
-    		$$invalidate(3, snackbarColor = "error");
+    		$$invalidate(5, message = e.detail.message);
+    		$$invalidate(4, snackbarColor = "error");
     	};
 
     	let onReset = () => {
@@ -5323,6 +5265,7 @@ var app = (function () {
     		showSnackbar,
     		snackbarTimeout,
     		result,
+    		showResult,
     		images,
     		imageContainerText,
     		taskTitle,
@@ -5341,18 +5284,19 @@ var app = (function () {
     	$$self.$inject_state = $$props => {
     		if ("selectedImage" in $$props) $$invalidate(0, selectedImage = $$props.selectedImage);
     		if ("showSnackbar" in $$props) $$invalidate(1, showSnackbar = $$props.showSnackbar);
-    		if ("snackbarTimeout" in $$props) $$invalidate(5, snackbarTimeout = $$props.snackbarTimeout);
+    		if ("snackbarTimeout" in $$props) $$invalidate(6, snackbarTimeout = $$props.snackbarTimeout);
     		if ("result" in $$props) $$invalidate(2, result = $$props.result);
-    		if ("images" in $$props) $$invalidate(6, images = $$props.images);
-    		if ("imageContainerText" in $$props) $$invalidate(7, imageContainerText = $$props.imageContainerText);
-    		if ("taskTitle" in $$props) $$invalidate(8, taskTitle = $$props.taskTitle);
-    		if ("taskNumber" in $$props) $$invalidate(9, taskNumber = $$props.taskNumber);
-    		if ("snackbarColor" in $$props) $$invalidate(3, snackbarColor = $$props.snackbarColor);
-    		if ("message" in $$props) $$invalidate(4, message = $$props.message);
-    		if ("onSelectPreviewImage" in $$props) $$invalidate(10, onSelectPreviewImage = $$props.onSelectPreviewImage);
-    		if ("onClassify" in $$props) $$invalidate(11, onClassify = $$props.onClassify);
-    		if ("onError" in $$props) $$invalidate(12, onError = $$props.onError);
-    		if ("onReset" in $$props) $$invalidate(13, onReset = $$props.onReset);
+    		if ("showResult" in $$props) $$invalidate(3, showResult = $$props.showResult);
+    		if ("images" in $$props) $$invalidate(7, images = $$props.images);
+    		if ("imageContainerText" in $$props) $$invalidate(8, imageContainerText = $$props.imageContainerText);
+    		if ("taskTitle" in $$props) $$invalidate(9, taskTitle = $$props.taskTitle);
+    		if ("taskNumber" in $$props) $$invalidate(10, taskNumber = $$props.taskNumber);
+    		if ("snackbarColor" in $$props) $$invalidate(4, snackbarColor = $$props.snackbarColor);
+    		if ("message" in $$props) $$invalidate(5, message = $$props.message);
+    		if ("onSelectPreviewImage" in $$props) $$invalidate(11, onSelectPreviewImage = $$props.onSelectPreviewImage);
+    		if ("onClassify" in $$props) $$invalidate(12, onClassify = $$props.onClassify);
+    		if ("onError" in $$props) $$invalidate(13, onError = $$props.onError);
+    		if ("onReset" in $$props) $$invalidate(14, onReset = $$props.onReset);
     		if ("_clearInput" in $$props) _clearInput = $$props._clearInput;
     		if ("_clearResult" in $$props) _clearResult = $$props._clearResult;
     		if ("_initResult" in $$props) _initResult = $$props._initResult;
@@ -5366,6 +5310,7 @@ var app = (function () {
     		selectedImage,
     		showSnackbar,
     		result,
+    		showResult,
     		snackbarColor,
     		message,
     		snackbarTimeout,
