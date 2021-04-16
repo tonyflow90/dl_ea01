@@ -155,6 +155,9 @@
 	<footer>
 		<div>
 			<h4>Sources</h4>
+			<a href="https://github.com/tonyflow90/dl_ea01">
+				<p>Github Repository</p>
+			</a>
 			<a href="https://ml5js.org/">
 				<p>ml5js</p>
 			</a>
@@ -171,41 +174,31 @@
 
 		<div>
 			<h4>Images</h4>
-			<p>
-				penguin -
-				<a
-					href="https://www.pexels.com/de-de/foto/schwarzweiss-pinguin-der-auf-sand-geht-2078474/"
-					>link
-				</a>
-			</p>
-			<p>
-				maltese -
-				<a
-					href="https://www.pexels.com/de-de/foto/meer-natur-ferien-sand-6528245/ "
-					>link
-				</a>
-			</p>
-			<p>
-				espresso -
-				<a
-					href="https://www.pexels.com/de-de/foto/koffein-kaffee-espresso-schwarzer-kaffee-1233528/"
-					>link
-				</a>
-			</p>
-			<p>
-				gecko -
-				<a
-					href="https://www.pexels.com/de-de/foto/grunes-chamaleon-auf-schwarzer-oberflache-3779926/"
-					>link
-				</a>
-			</p>
-			<p>
-				stopwatch -
-				<a
-					href="https://www.pexels.com/de-de/foto/vintage-zeit-uhr-timer-5563414/"
-					>link
-				</a>
-			</p>
+			<a
+				href="https://www.pexels.com/de-de/foto/schwarzweiss-pinguin-der-auf-sand-geht-2078474/"
+			>
+				<p>penguin</p>
+			</a>
+			<a
+				href="https://www.pexels.com/de-de/foto/meer-natur-ferien-sand-6528245/"
+			>
+				<p>maltese</p>
+			</a>
+			<a
+				href="https://www.pexels.com/de-de/foto/koffein-kaffee-espresso-schwarzer-kaffee-1233528/"
+			>
+				<p>espresso</p>
+			</a>
+			<a
+				href="https://www.pexels.com/de-de/foto/grunes-chamaleon-auf-schwarzer-oberflache-3779926/"
+			>
+				<p>gecko</p>
+			</a>
+			<a
+				href="https://www.pexels.com/de-de/foto/vintage-zeit-uhr-timer-5563414/"
+			>
+				<p>stopwatch</p>
+			</a>
 		</div>
 	</footer>
 </app>
@@ -225,18 +218,17 @@
 		display: grid;
 		justify-items: center;
 		grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-		padding: 10px;
+		padding: 20px;
 	}
 
 	.buttons {
 		max-width: 400px;
 		min-width: 180px;
 		width: 100vw;
-
-		height: 50px;
-		display: flex;
-		flex-direction: row;
-		padding: 10px;
+		display: grid;
+		justify-items: center;
+		grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+		padding: 20px;
 	}
 
 	.buttons * {
@@ -245,7 +237,7 @@
 
 	.results {
 		display: flex;
-		padding-top: 10px;
+		padding-top: 20px;
 	}
 
 	header {
@@ -253,6 +245,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		text-align: center;
 		padding: 10px 0;
 		background-color: var(--color-primary-500);
 	}
@@ -262,7 +255,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding: 10px 0;
+		padding: 20px 0;
 		background-color: var(--color-white-500);
 	}
 

@@ -77,8 +77,8 @@
     }
 
     img {
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 300px;
+        max-height: 300px;
         min-width: 180px;
         min-height: 180px;
         width: 100vw;
@@ -98,6 +98,8 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-color: var(--color-secondary-500);
+        border-radius: 25%;
+        border: 5px dotted var(--color-secondary-500);
+        /* background-color: var(--color-secondary-500); */
     }
 </style>

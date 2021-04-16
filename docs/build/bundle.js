@@ -3606,7 +3606,7 @@ var app = (function () {
     			t1 = space();
     			p = element("p");
     			t2 = text(/*text*/ ctx[1]);
-    			attr_dev(span, "class", "material-icons md-48 icon svelte-htnu20");
+    			attr_dev(span, "class", "material-icons md-48 icon svelte-7yezb2");
     			add_location(span, file_1, 57, 8, 1641);
     			add_location(p, file_1, 58, 8, 1709);
     		},
@@ -3646,7 +3646,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			attr_dev(img, "class", "image selected svelte-htnu20");
+    			attr_dev(img, "class", "image selected svelte-7yezb2");
     			if (img.src !== (img_src_value = /*file*/ ctx[0].src)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", img_alt_value = /*file*/ ctx[0].alt);
     			add_location(img, file_1, 55, 8, 1558);
@@ -3702,9 +3702,9 @@ var app = (function () {
     			if_block.c();
     			attr_dev(input, "type", "file");
     			attr_dev(input, "id", "fileInput");
-    			attr_dev(input, "class", "svelte-htnu20");
+    			attr_dev(input, "class", "svelte-7yezb2");
     			add_location(input, file_1, 53, 4, 1468);
-    			attr_dev(div, "class", "container svelte-htnu20");
+    			attr_dev(div, "class", "container svelte-7yezb2");
     			add_location(div, file_1, 52, 0, 1439);
     		},
     		l: function claim(nodes) {
@@ -4280,7 +4280,7 @@ var app = (function () {
     			create_component(tooltip0.$$.fragment);
     			t = space();
     			create_component(tooltip1.$$.fragment);
-    			attr_dev(div, "class", "buttons svelte-1mtgkep");
+    			attr_dev(div, "class", "buttons svelte-1adeju1");
     			add_location(div, file, 114, 3, 2530);
     		},
     		m: function mount(target, anchor) {
@@ -4354,7 +4354,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr_dev(div, "class", "images svelte-1mtgkep");
+    			attr_dev(div, "class", "images svelte-1adeju1");
     			add_location(div, file, 103, 3, 2303);
     		},
     		m: function mount(target, anchor) {
@@ -4483,7 +4483,7 @@ var app = (function () {
     			div = element("div");
     			create_component(button.$$.fragment);
     			attr_dev(div, "slot", "activator");
-    			attr_dev(div, "class", "svelte-1mtgkep");
+    			attr_dev(div, "class", "svelte-1adeju1");
     			add_location(div, file, 116, 5, 2573);
     		},
     		m: function mount(target, anchor) {
@@ -4605,7 +4605,7 @@ var app = (function () {
     			div = element("div");
     			create_component(button.$$.fragment);
     			attr_dev(div, "slot", "activator");
-    			attr_dev(div, "class", "svelte-1mtgkep");
+    			attr_dev(div, "class", "svelte-1adeju1");
     			add_location(div, file, 123, 5, 2749);
     		},
     		m: function mount(target, anchor) {
@@ -4658,7 +4658,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			attr_dev(img, "class", "image preview svelte-1mtgkep");
+    			attr_dev(img, "class", "image preview svelte-1adeju1");
     			if (img.src !== (img_src_value = /*image*/ ctx[20].src)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", /*image*/ ctx[20].name);
     			add_location(img, file, 105, 5, 2362);
@@ -4849,28 +4849,26 @@ var app = (function () {
     	let a2;
     	let p2;
     	let t17;
+    	let a3;
+    	let p3;
+    	let t19;
     	let div2;
     	let h41;
-    	let t19;
-    	let p3;
-    	let t20;
-    	let a3;
-    	let t22;
+    	let t21;
+    	let a4;
     	let p4;
     	let t23;
-    	let a4;
-    	let t25;
-    	let p5;
-    	let t26;
     	let a5;
-    	let t28;
-    	let p6;
-    	let t29;
+    	let p5;
+    	let t25;
     	let a6;
-    	let t31;
-    	let p7;
-    	let t32;
+    	let p6;
+    	let t27;
     	let a7;
+    	let p7;
+    	let t29;
+    	let a8;
+    	let p8;
     	let current;
     	imageclassifier = new ImageClassifier({ $$inline: true });
 
@@ -4957,93 +4955,96 @@ var app = (function () {
     			t11 = space();
     			a0 = element("a");
     			p0 = element("p");
-    			p0.textContent = "ml5js";
+    			p0.textContent = "Github Repository";
     			t13 = space();
     			a1 = element("a");
     			p1 = element("p");
-    			p1.textContent = "Google Charts";
+    			p1.textContent = "ml5js";
     			t15 = space();
     			a2 = element("a");
     			p2 = element("p");
-    			p2.textContent = "ml5js IMAGENET_CLASSES";
+    			p2.textContent = "Google Charts";
     			t17 = space();
+    			a3 = element("a");
+    			p3 = element("p");
+    			p3.textContent = "ml5js IMAGENET_CLASSES";
+    			t19 = space();
     			div2 = element("div");
     			h41 = element("h4");
     			h41.textContent = "Images";
-    			t19 = space();
-    			p3 = element("p");
-    			t20 = text("penguin -\r\n\t\t\t\t");
-    			a3 = element("a");
-    			a3.textContent = "link";
-    			t22 = space();
-    			p4 = element("p");
-    			t23 = text("maltese -\r\n\t\t\t\t");
+    			t21 = space();
     			a4 = element("a");
-    			a4.textContent = "link";
-    			t25 = space();
-    			p5 = element("p");
-    			t26 = text("espresso -\r\n\t\t\t\t");
+    			p4 = element("p");
+    			p4.textContent = "penguin";
+    			t23 = space();
     			a5 = element("a");
-    			a5.textContent = "link";
-    			t28 = space();
-    			p6 = element("p");
-    			t29 = text("gecko -\r\n\t\t\t\t");
+    			p5 = element("p");
+    			p5.textContent = "maltese";
+    			t25 = space();
     			a6 = element("a");
-    			a6.textContent = "link";
-    			t31 = space();
-    			p7 = element("p");
-    			t32 = text("stopwatch -\r\n\t\t\t\t");
+    			p6 = element("p");
+    			p6.textContent = "espresso";
+    			t27 = space();
     			a7 = element("a");
-    			a7.textContent = "link";
-    			attr_dev(h5, "class", "svelte-1mtgkep");
+    			p7 = element("p");
+    			p7.textContent = "gecko";
+    			t29 = space();
+    			a8 = element("a");
+    			p8 = element("p");
+    			p8.textContent = "stopwatch";
+    			attr_dev(h5, "class", "svelte-1adeju1");
     			add_location(h5, file, 91, 2, 2085);
-    			attr_dev(h3, "class", "svelte-1mtgkep");
+    			attr_dev(h3, "class", "svelte-1adeju1");
     			add_location(h3, file, 92, 2, 2126);
-    			attr_dev(header, "class", "svelte-1mtgkep");
+    			attr_dev(header, "class", "svelte-1adeju1");
     			add_location(header, file, 90, 1, 2073);
-    			attr_dev(div0, "class", "results svelte-1mtgkep");
+    			attr_dev(div0, "class", "results svelte-1adeju1");
     			add_location(div0, file, 137, 2, 2998);
-    			attr_dev(main, "class", "svelte-1mtgkep");
+    			attr_dev(main, "class", "svelte-1adeju1");
     			add_location(main, file, 95, 1, 2163);
-    			attr_dev(h40, "class", "svelte-1mtgkep");
+    			attr_dev(h40, "class", "svelte-1adeju1");
     			add_location(h40, file, 156, 3, 3386);
-    			attr_dev(p0, "class", "svelte-1mtgkep");
-    			add_location(p0, file, 158, 4, 3442);
-    			attr_dev(a0, "href", "https://ml5js.org/");
+    			attr_dev(p0, "class", "svelte-1adeju1");
+    			add_location(p0, file, 158, 4, 3461);
+    			attr_dev(a0, "href", "https://github.com/tonyflow90/dl_ea01");
     			add_location(a0, file, 157, 3, 3407);
-    			attr_dev(p1, "class", "svelte-1mtgkep");
-    			add_location(p1, file, 161, 4, 3537);
-    			attr_dev(a1, "href", "https://developers.google.com/chart/interactive/docs");
-    			add_location(a1, file, 160, 3, 3468);
-    			attr_dev(p2, "class", "svelte-1mtgkep");
-    			add_location(p2, file, 167, 4, 3676);
-    			attr_dev(a2, "href", "https://github.com/ml5js/ml5-library/blob/main/src/utils/IMAGENET_CLASSES.js");
-    			add_location(a2, file, 164, 3, 3573);
+    			attr_dev(p1, "class", "svelte-1adeju1");
+    			add_location(p1, file, 161, 4, 3534);
+    			attr_dev(a1, "href", "https://ml5js.org/");
+    			add_location(a1, file, 160, 3, 3499);
+    			attr_dev(p2, "class", "svelte-1adeju1");
+    			add_location(p2, file, 164, 4, 3629);
+    			attr_dev(a2, "href", "https://developers.google.com/chart/interactive/docs");
+    			add_location(a2, file, 163, 3, 3560);
+    			attr_dev(p3, "class", "svelte-1adeju1");
+    			add_location(p3, file, 170, 4, 3768);
+    			attr_dev(a3, "href", "https://github.com/ml5js/ml5-library/blob/main/src/utils/IMAGENET_CLASSES.js");
+    			add_location(a3, file, 167, 3, 3665);
     			add_location(div1, file, 155, 2, 3376);
-    			attr_dev(h41, "class", "svelte-1mtgkep");
-    			add_location(h41, file, 172, 3, 3740);
-    			attr_dev(a3, "href", "https://www.pexels.com/de-de/foto/schwarzweiss-pinguin-der-auf-sand-geht-2078474/");
-    			add_location(a3, file, 175, 4, 3784);
-    			attr_dev(p3, "class", "svelte-1mtgkep");
-    			add_location(p3, file, 173, 3, 3760);
-    			attr_dev(a4, "href", "https://www.pexels.com/de-de/foto/meer-natur-ferien-sand-6528245/ ");
-    			add_location(a4, file, 182, 4, 3941);
-    			attr_dev(p4, "class", "svelte-1mtgkep");
-    			add_location(p4, file, 180, 3, 3917);
-    			attr_dev(a5, "href", "https://www.pexels.com/de-de/foto/koffein-kaffee-espresso-schwarzer-kaffee-1233528/");
-    			add_location(a5, file, 189, 4, 4084);
-    			attr_dev(p5, "class", "svelte-1mtgkep");
-    			add_location(p5, file, 187, 3, 4059);
-    			attr_dev(a6, "href", "https://www.pexels.com/de-de/foto/grunes-chamaleon-auf-schwarzer-oberflache-3779926/");
-    			add_location(a6, file, 196, 4, 4241);
-    			attr_dev(p6, "class", "svelte-1mtgkep");
-    			add_location(p6, file, 194, 3, 4219);
-    			attr_dev(a7, "href", "https://www.pexels.com/de-de/foto/vintage-zeit-uhr-timer-5563414/");
-    			add_location(a7, file, 203, 4, 4403);
-    			attr_dev(p7, "class", "svelte-1mtgkep");
-    			add_location(p7, file, 201, 3, 4377);
-    			add_location(div2, file, 171, 2, 3730);
-    			attr_dev(footer, "class", "svelte-1mtgkep");
+    			attr_dev(h41, "class", "svelte-1adeju1");
+    			add_location(h41, file, 175, 3, 3832);
+    			attr_dev(p4, "class", "svelte-1adeju1");
+    			add_location(p4, file, 179, 4, 3960);
+    			attr_dev(a4, "href", "https://www.pexels.com/de-de/foto/schwarzweiss-pinguin-der-auf-sand-geht-2078474/");
+    			add_location(a4, file, 176, 3, 3852);
+    			attr_dev(p5, "class", "svelte-1adeju1");
+    			add_location(p5, file, 184, 4, 4080);
+    			attr_dev(a5, "href", "https://www.pexels.com/de-de/foto/meer-natur-ferien-sand-6528245/");
+    			add_location(a5, file, 181, 3, 3988);
+    			attr_dev(p6, "class", "svelte-1adeju1");
+    			add_location(p6, file, 189, 4, 4218);
+    			attr_dev(a6, "href", "https://www.pexels.com/de-de/foto/koffein-kaffee-espresso-schwarzer-kaffee-1233528/");
+    			add_location(a6, file, 186, 3, 4108);
+    			attr_dev(p7, "class", "svelte-1adeju1");
+    			add_location(p7, file, 194, 4, 4358);
+    			attr_dev(a7, "href", "https://www.pexels.com/de-de/foto/grunes-chamaleon-auf-schwarzer-oberflache-3779926/");
+    			add_location(a7, file, 191, 3, 4247);
+    			attr_dev(p8, "class", "svelte-1adeju1");
+    			add_location(p8, file, 199, 4, 4476);
+    			attr_dev(a8, "href", "https://www.pexels.com/de-de/foto/vintage-zeit-uhr-timer-5563414/");
+    			add_location(a8, file, 196, 3, 4384);
+    			add_location(div2, file, 174, 2, 3822);
+    			attr_dev(footer, "class", "svelte-1adeju1");
     			add_location(footer, file, 154, 1, 3364);
     			add_location(app, file, 87, 0, 2041);
     		},
@@ -5081,29 +5082,27 @@ var app = (function () {
     			append_dev(div1, t15);
     			append_dev(div1, a2);
     			append_dev(a2, p2);
-    			append_dev(footer, t17);
+    			append_dev(div1, t17);
+    			append_dev(div1, a3);
+    			append_dev(a3, p3);
+    			append_dev(footer, t19);
     			append_dev(footer, div2);
     			append_dev(div2, h41);
-    			append_dev(div2, t19);
-    			append_dev(div2, p3);
-    			append_dev(p3, t20);
-    			append_dev(p3, a3);
-    			append_dev(div2, t22);
-    			append_dev(div2, p4);
-    			append_dev(p4, t23);
-    			append_dev(p4, a4);
+    			append_dev(div2, t21);
+    			append_dev(div2, a4);
+    			append_dev(a4, p4);
+    			append_dev(div2, t23);
+    			append_dev(div2, a5);
+    			append_dev(a5, p5);
     			append_dev(div2, t25);
-    			append_dev(div2, p5);
-    			append_dev(p5, t26);
-    			append_dev(p5, a5);
-    			append_dev(div2, t28);
-    			append_dev(div2, p6);
-    			append_dev(p6, t29);
-    			append_dev(p6, a6);
-    			append_dev(div2, t31);
-    			append_dev(div2, p7);
-    			append_dev(p7, t32);
-    			append_dev(p7, a7);
+    			append_dev(div2, a6);
+    			append_dev(a6, p6);
+    			append_dev(div2, t27);
+    			append_dev(div2, a7);
+    			append_dev(a7, p7);
+    			append_dev(div2, t29);
+    			append_dev(div2, a8);
+    			append_dev(a8, p8);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
