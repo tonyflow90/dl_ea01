@@ -7,7 +7,7 @@
 	import ImageClassifier, {
 		classify,
 	} from "./components/ImageClassifier.svelte";
-	import BarChart from "./components/BarChart.svelte";
+	import Chart from "./components/Chart.svelte";
 
 	// Props
 	let selectedImage = undefined;
@@ -94,67 +94,70 @@
 	</header>
 
 	<main>
-		<FileInput
-			bind:file={selectedImage}
-			text={imageContainerText}
-			on:error={onError}
-		/>
+		<div>
+			<FileInput
+				bind:file={selectedImage}
+				text={imageContainerText}
+				on:error={onError}
+			/>
 
-		{#if !selectedImage}
-			<div class="images">
-				{#each images as image, i}
-					<img
-						class="image preview"
-						src={image.src}
-						alt={image.name}
-						on:click={onSelectPreviewImage}
-					/>
-				{/each}
-			</div>
-		{:else}
-			<div class="buttons">
-				<Tooltip>
-					<div slot="activator">
-						<Button on:click={onClassify}>klassifizieren</Button>
-					</div>
-					Ausgewähltes Bild klassifizieren.
-				</Tooltip>
+			{#if !selectedImage}
+				<div class="images">
+					{#each images as image, i}
+						<img
+							class="image preview"
+							src={image.src}
+							alt={image.name}
+							on:click={onSelectPreviewImage}
+						/>
+					{/each}
+				</div>
+			{:else}
+				<div class="buttons">
+					<Tooltip>
+						<div slot="activator">
+							<Button on:click={onClassify}>klassifizieren</Button
+							>
+						</div>
+						Ausgewähltes Bild klassifizieren.
+					</Tooltip>
 
-				<Tooltip>
-					<div slot="activator">
-						<Button
-							color="secondary"
-							light
-							block
-							outlined
-							on:click={onReset}>zurücksetzen</Button
-						>
-					</div>
-					Eingaben zurücksetzen.
-				</Tooltip>
-			</div>
-		{/if}
-
-		<div class="results">
-			<BarChart image={result.image} data={result.items} />
+					<Tooltip>
+						<div slot="activator">
+							<Button
+								color="secondary"
+								light
+								block
+								outlined
+								on:click={onReset}>zurücksetzen</Button
+							>
+						</div>
+						Eingaben zurücksetzen.
+					</Tooltip>
+				</div>
+			{/if}
 		</div>
 
-		<Snackbar
-			bind:value={showSnackbar}
-			noAction
-			color={snackbarColor}
-			timeout={snackbarTimeout}
-		>
-			<div>{message}</div>
-			<div slot="action">
-				<Button on:click={() => (showSnackbar = false)}>Close</Button>
-			</div>
-		</Snackbar>
+		<div class="results">
+			<Chart image={result.image} data={result.items} />
+		</div>
 	</main>
+
+	<Snackbar
+		bind:value={showSnackbar}
+		noAction
+		color={snackbarColor}
+		timeout={snackbarTimeout}
+	>
+		<div>{message}</div>
+		<div slot="action">
+			<Button on:click={() => (showSnackbar = false)}>Close</Button>
+		</div>
+	</Snackbar>
 
 	<footer>
 		<div>
-			<h4>Sources</h4>
+			<h5>Sources</h5>
 			<a href="https://github.com/tonyflow90/dl_ea01">
 				<p>Github Repository</p>
 			</a>
@@ -173,7 +176,7 @@
 		</div>
 
 		<div>
-			<h4>Images</h4>
+			<h5>Images</h5>
 			<a
 				href="https://www.pexels.com/de-de/foto/schwarzweiss-pinguin-der-auf-sand-geht-2078474/"
 			>
@@ -231,17 +234,13 @@
 		padding: 20px;
 	}
 
-	.buttons * {
-		padding: 0 5px;
-	}
-
 	.results {
 		display: flex;
 		padding-top: 20px;
 	}
 
 	header {
-		min-height: 20vh;
+		min-height: 15vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -251,7 +250,7 @@
 	}
 
 	main {
-		min-height: 55vh;
+		min-height: 65vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -260,20 +259,20 @@
 	}
 
 	footer {
-		min-height: 25vh;
+		min-height: 20vh;
 		background-color: var(--color-secondary-700);
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		text-align: center;
 		padding: 1rem;
-		bottom: 0;
+		font-size: small;
 	}
 
 	p,
 	h3,
 	h4,
 	h5 {
-		color: var(--color-white-500);
+		color: var(--color-black-500);
 	}
 
 	@media (min-width: 640px) {

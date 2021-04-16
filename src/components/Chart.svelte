@@ -1,46 +1,43 @@
 <script>
     export let image;
     export let data;
-    let showresult = 'none';
+    let showresult = "none";
 
     let draw = (data) => {
         if (!data) {
-            showresult = 'none';
+            showresult = "none";
             return;
         }
+        showresult = "flex";
 
-        showresult = 'flex';
+        let confidence = 0;
+        for (const [i, el] of data.entries()) {
+            confidence += el.confidence;
+        }
 
         let adata = [];
         data.forEach((e) => {
             adata.push(Object.values(e));
         });
-        var gdata = google.visualization.arrayToDataTable([
-            ["Element", "Percentage"],
-            ...adata,
-        ]);
+        adata.push(["andere", 1 - confidence]);
 
-        var options = {
-            chartArea: { width: "50%" },
-        };
+        var gdata = new google.visualization.DataTable();
+        gdata.addColumn("string", "Name");
+        gdata.addColumn("number", "Percentage");
+        gdata.addRows(adata);
 
         var options = {
             title: "Auswertung Bilderkennung",
             width: 400,
             height: 400,
-            chartArea: { width: "50%" },
-            bar: { groupWidth: "95%" },
-            legend: { position: "none" },
-            hAxis: {
-                minValue: 0,
-                maxValue: 1,
-            },
+            colors: ["#00c853", "#2962ff", "#d50000", "#9e9e9e"],
+            is3D: true,
         };
-        var chart = new google.visualization.BarChart(
-            document.getElementById("chart")
-        );
 
-        chart.draw(gdata, options);
+        var chart_pie = new google.visualization.PieChart(
+            document.getElementById("chart_pie")
+        );
+        chart_pie.draw(gdata, options);
     };
 
     google.charts.load("current", { packages: ["corechart", "bar"] });
@@ -51,13 +48,14 @@
     }
 </script>
 
-<main showresult={showresult}>
+<main {showresult}>
     <h3>Ergebnis</h3>
     {#if image}
         <img class="image" src={image.src} alt={image.name} />
     {/if}
 
-    <div class="chart" id="chart" />
+    <div class="chart" id="chart_pie" />
+    <!-- <div class="chart" id="chart_bar" /> -->
 
     {#if !data}
         <p>Keine Daten.</p>
@@ -65,11 +63,11 @@
 </main>
 
 <style>
-    main[showresult=none] {
+    main[showresult="none"] {
         display: none;
     }
 
-    main[showresult=flex] {
+    main[showresult="flex"] {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -78,8 +76,9 @@
     }
 
     .image {
-        height: 400px;
-        width: 400px;
+        border-radius: 25%;
+        height: 200px;
+        width: 200px;
     }
 
     .chart {
