@@ -4251,7 +4251,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (109:5) {#each images as image, i}
+    // (110:4) {#each images as image, i}
     function create_each_block(ctx) {
     	let img;
     	let img_src_value;
@@ -4261,10 +4261,10 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			img = element("img");
-    			attr_dev(img, "class", "image preview svelte-10a1q5");
+    			attr_dev(img, "class", "image preview svelte-14k2zjs");
     			if (img.src !== (img_src_value = /*image*/ ctx[21].src)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", /*image*/ ctx[21].name);
-    			add_location(img, file, 109, 6, 2464);
+    			add_location(img, file, 110, 5, 2485);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -4286,14 +4286,14 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(109:5) {#each images as image, i}",
+    		source: "(110:4) {#each images as image, i}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (120:5) <Tooltip>
+    // (121:4) <Tooltip>
     function create_default_slot_5(ctx) {
     	let t;
 
@@ -4313,14 +4313,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(120:5) <Tooltip>",
+    		source: "(121:4) <Tooltip>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (122:7) <Button small on:click={onClassify}>
+    // (123:6) <Button small on:click={onClassify}         >
     function create_default_slot_4(ctx) {
     	let t;
 
@@ -4340,14 +4340,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(122:7) <Button small on:click={onClassify}>",
+    		source: "(123:6) <Button small on:click={onClassify}         >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (121:6) 
+    // (122:5) 
     function create_activator_slot_1(ctx) {
     	let div;
     	let button;
@@ -4369,8 +4369,8 @@ var app = (function () {
     			div = element("div");
     			create_component(button.$$.fragment);
     			attr_dev(div, "slot", "activator");
-    			attr_dev(div, "class", "svelte-10a1q5");
-    			add_location(div, file, 120, 6, 2695);
+    			attr_dev(div, "class", "svelte-14k2zjs");
+    			add_location(div, file, 121, 5, 2706);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4405,14 +4405,14 @@ var app = (function () {
     		block,
     		id: create_activator_slot_1.name,
     		type: "slot",
-    		source: "(121:6) ",
+    		source: "(122:5) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (128:5) <Tooltip>
+    // (130:4) <Tooltip>
     function create_default_slot_3(ctx) {
     	let t;
 
@@ -4432,14 +4432,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(128:5) <Tooltip>",
+    		source: "(130:4) <Tooltip>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (130:7) <Button          color="secondary"          light          block          outlined          small          on:click={onReset}>
+    // (132:6) <Button         color="secondary"         light         block         outlined         small         on:click={onReset}>
     function create_default_slot_2(ctx) {
     	let t;
 
@@ -4459,14 +4459,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(130:7) <Button          color=\\\"secondary\\\"          light          block          outlined          small          on:click={onReset}>",
+    		source: "(132:6) <Button         color=\\\"secondary\\\"         light         block         outlined         small         on:click={onReset}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (129:6) 
+    // (131:5) 
     function create_activator_slot(ctx) {
     	let div;
     	let button;
@@ -4492,8 +4492,8 @@ var app = (function () {
     			div = element("div");
     			create_component(button.$$.fragment);
     			attr_dev(div, "slot", "activator");
-    			attr_dev(div, "class", "svelte-10a1q5");
-    			add_location(div, file, 128, 6, 2892);
+    			attr_dev(div, "class", "svelte-14k2zjs");
+    			add_location(div, file, 130, 5, 2905);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4528,14 +4528,14 @@ var app = (function () {
     		block,
     		id: create_activator_slot.name,
     		type: "slot",
-    		source: "(129:6) ",
+    		source: "(131:5) ",
     		ctx
     	});
 
     	return block;
     }
 
-    // (150:1) <Snackbar    bind:value={showSnackbar}    noAction    color={snackbarColor}    timeout={snackbarTimeout}   >
+    // (153:0) <Snackbar   bind:value={showSnackbar}   noAction   color={snackbarColor}   timeout={snackbarTimeout}  >
     function create_default_slot_1(ctx) {
     	let div;
     	let t;
@@ -4544,7 +4544,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text(/*message*/ ctx[5]);
-    			add_location(div, file, 155, 2, 3424);
+    			add_location(div, file, 158, 1, 3426);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4562,14 +4562,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(150:1) <Snackbar    bind:value={showSnackbar}    noAction    color={snackbarColor}    timeout={snackbarTimeout}   >",
+    		source: "(153:0) <Snackbar   bind:value={showSnackbar}   noAction   color={snackbarColor}   timeout={snackbarTimeout}  >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (158:3) <Button on:click={() => (showSnackbar = false)}>
+    // (161:2) <Button on:click={() => (showSnackbar = false)}>
     function create_default_slot(ctx) {
     	let t;
 
@@ -4589,14 +4589,14 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(158:3) <Button on:click={() => (showSnackbar = false)}>",
+    		source: "(161:2) <Button on:click={() => (showSnackbar = false)}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (157:2) 
+    // (160:1) 
     function create_action_slot(ctx) {
     	let div;
     	let button;
@@ -4617,7 +4617,7 @@ var app = (function () {
     			div = element("div");
     			create_component(button.$$.fragment);
     			attr_dev(div, "slot", "action");
-    			add_location(div, file, 156, 2, 3448);
+    			add_location(div, file, 159, 1, 3449);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4652,7 +4652,7 @@ var app = (function () {
     		block,
     		id: create_action_slot.name,
     		type: "slot",
-    		source: "(157:2) ",
+    		source: "(160:1) ",
     		ctx
     	});
 
@@ -4660,7 +4660,6 @@ var app = (function () {
     }
 
     function create_fragment(ctx) {
-    	let app;
     	let imageclassifier;
     	let t0;
     	let header;
@@ -4669,6 +4668,7 @@ var app = (function () {
     	let h3;
     	let t5;
     	let main;
+    	let div4;
     	let div2;
     	let fileinput;
     	let updating_file;
@@ -4687,7 +4687,7 @@ var app = (function () {
     	let updating_value;
     	let t11;
     	let footer;
-    	let div4;
+    	let div5;
     	let h51;
     	let t13;
     	let a0;
@@ -4708,7 +4708,7 @@ var app = (function () {
     	let a5;
     	let p5;
     	let t25;
-    	let div5;
+    	let div6;
     	let h52;
     	let t27;
     	let a6;
@@ -4803,7 +4803,6 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			app = element("app");
     			create_component(imageclassifier.$$.fragment);
     			t0 = space();
     			header = element("header");
@@ -4814,6 +4813,7 @@ var app = (function () {
     			h3.textContent = `${/*taskTitle*/ ctx[9]}`;
     			t5 = space();
     			main = element("main");
+    			div4 = element("div");
     			div2 = element("div");
     			create_component(fileinput.$$.fragment);
     			t6 = space();
@@ -4835,7 +4835,7 @@ var app = (function () {
     			create_component(snackbar.$$.fragment);
     			t11 = space();
     			footer = element("footer");
-    			div4 = element("div");
+    			div5 = element("div");
     			h51 = element("h5");
     			h51.textContent = "Ressourcen";
     			t13 = space();
@@ -4863,7 +4863,7 @@ var app = (function () {
     			p5 = element("p");
     			p5.textContent = "ml5js IMAGENET_CLASSES";
     			t25 = space();
-    			div5 = element("div");
+    			div6 = element("div");
     			h52 = element("h5");
     			h52.textContent = "Bilder";
     			t27 = space();
@@ -4886,91 +4886,92 @@ var app = (function () {
     			a10 = element("a");
     			p10 = element("p");
     			p10.textContent = "stopwatch";
-    			attr_dev(h50, "class", "svelte-10a1q5");
-    			add_location(h50, file, 94, 2, 2160);
-    			attr_dev(h3, "class", "svelte-10a1q5");
-    			add_location(h3, file, 95, 2, 2201);
-    			attr_dev(header, "class", "svelte-10a1q5");
-    			add_location(header, file, 93, 1, 2148);
-    			attr_dev(div0, "class", "images svelte-10a1q5");
-    			add_location(div0, file, 107, 4, 2403);
-    			attr_dev(div1, "class", "buttons svelte-10a1q5");
-    			add_location(div1, file, 118, 4, 2650);
-    			attr_dev(div2, "class", "svelte-10a1q5");
-    			add_location(div2, file, 99, 2, 2248);
-    			attr_dev(div3, "class", "results svelte-10a1q5");
+    			attr_dev(h50, "class", "svelte-14k2zjs");
+    			add_location(h50, file, 94, 1, 2166);
+    			attr_dev(h3, "class", "svelte-14k2zjs");
+    			add_location(h3, file, 95, 1, 2206);
+    			attr_dev(header, "class", "svelte-14k2zjs");
+    			add_location(header, file, 93, 0, 2155);
+    			attr_dev(div0, "class", "images svelte-14k2zjs");
+    			add_location(div0, file, 108, 3, 2426);
+    			attr_dev(div1, "class", "buttons svelte-14k2zjs");
+    			add_location(div1, file, 119, 3, 2663);
+    			attr_dev(div2, "class", "svelte-14k2zjs");
+    			add_location(div2, file, 100, 2, 2272);
+    			attr_dev(div3, "class", "results svelte-14k2zjs");
     			attr_dev(div3, "showresult", /*showResult*/ ctx[3]);
-    			add_location(div3, file, 144, 2, 3187);
-    			attr_dev(main, "class", "svelte-10a1q5");
-    			add_location(main, file, 98, 1, 2238);
-    			attr_dev(h51, "class", "svelte-10a1q5");
-    			add_location(h51, file, 163, 3, 3585);
-    			attr_dev(p0, "class", "svelte-10a1q5");
-    			add_location(p0, file, 165, 4, 3663);
+    			add_location(div3, file, 146, 2, 3188);
+    			attr_dev(div4, "class", "grid svelte-14k2zjs");
+    			add_location(div4, file, 99, 1, 2250);
+    			attr_dev(main, "class", "svelte-14k2zjs");
+    			add_location(main, file, 98, 0, 2241);
+    			attr_dev(h51, "class", "svelte-14k2zjs");
+    			add_location(h51, file, 166, 2, 3580);
+    			attr_dev(p0, "class", "svelte-14k2zjs");
+    			add_location(p0, file, 168, 3, 3656);
     			attr_dev(a0, "href", "https://github.com/tonyflow90/dl_ea01");
-    			add_location(a0, file, 164, 3, 3609);
-    			attr_dev(p1, "class", "svelte-10a1q5");
-    			add_location(p1, file, 168, 4, 3736);
+    			add_location(a0, file, 167, 2, 3603);
+    			attr_dev(p1, "class", "svelte-14k2zjs");
+    			add_location(p1, file, 171, 3, 3726);
     			attr_dev(a1, "href", "https://ml5js.org/");
-    			add_location(a1, file, 167, 3, 3701);
-    			attr_dev(p2, "class", "svelte-10a1q5");
-    			add_location(p2, file, 171, 4, 3831);
+    			add_location(a1, file, 170, 2, 3692);
+    			attr_dev(p2, "class", "svelte-14k2zjs");
+    			add_location(p2, file, 174, 3, 3818);
     			attr_dev(a2, "href", "https://developers.google.com/chart/interactive/docs");
-    			add_location(a2, file, 170, 3, 3762);
-    			attr_dev(p3, "class", "svelte-10a1q5");
-    			add_location(p3, file, 174, 4, 3901);
+    			add_location(a2, file, 173, 2, 3750);
+    			attr_dev(p3, "class", "svelte-14k2zjs");
+    			add_location(p3, file, 177, 3, 3885);
     			attr_dev(a3, "href", "https://svelte.dev/");
-    			add_location(a3, file, 173, 3, 3865);
-    			attr_dev(p4, "class", "svelte-10a1q5");
-    			add_location(p4, file, 177, 4, 3966);
+    			add_location(a3, file, 176, 2, 3850);
+    			attr_dev(p4, "class", "svelte-14k2zjs");
+    			add_location(p4, file, 180, 3, 3947);
     			attr_dev(a4, "href", "https://smeltejs.com/");
-    			add_location(a4, file, 176, 3, 3928);
-    			attr_dev(p5, "class", "svelte-10a1q5");
-    			add_location(p5, file, 182, 4, 4098);
+    			add_location(a4, file, 179, 2, 3910);
+    			attr_dev(p5, "class", "svelte-14k2zjs");
+    			add_location(p5, file, 185, 3, 4074);
     			attr_dev(a5, "href", "https://github.com/ml5js/ml5-library/blob/main/src/utils/IMAGENET_CLASSES.js");
-    			add_location(a5, file, 179, 3, 3995);
-    			add_location(div4, file, 162, 2, 3575);
-    			attr_dev(h52, "class", "svelte-10a1q5");
-    			add_location(h52, file, 187, 3, 4162);
-    			attr_dev(p6, "class", "svelte-10a1q5");
-    			add_location(p6, file, 191, 4, 4290);
+    			add_location(a5, file, 182, 2, 3974);
+    			add_location(div5, file, 165, 1, 3571);
+    			attr_dev(h52, "class", "svelte-14k2zjs");
+    			add_location(h52, file, 190, 2, 4134);
+    			attr_dev(p6, "class", "svelte-14k2zjs");
+    			add_location(p6, file, 194, 3, 4258);
     			attr_dev(a6, "href", "https://www.pexels.com/de-de/foto/schwarzweiss-pinguin-der-auf-sand-geht-2078474/");
-    			add_location(a6, file, 188, 3, 4182);
-    			attr_dev(p7, "class", "svelte-10a1q5");
-    			add_location(p7, file, 196, 4, 4410);
+    			add_location(a6, file, 191, 2, 4153);
+    			attr_dev(p7, "class", "svelte-14k2zjs");
+    			add_location(p7, file, 199, 3, 4373);
     			attr_dev(a7, "href", "https://www.pexels.com/de-de/foto/meer-natur-ferien-sand-6528245/");
-    			add_location(a7, file, 193, 3, 4318);
-    			attr_dev(p8, "class", "svelte-10a1q5");
-    			add_location(p8, file, 201, 4, 4548);
+    			add_location(a7, file, 196, 2, 4284);
+    			attr_dev(p8, "class", "svelte-14k2zjs");
+    			add_location(p8, file, 204, 3, 4506);
     			attr_dev(a8, "href", "https://www.pexels.com/de-de/foto/koffein-kaffee-espresso-schwarzer-kaffee-1233528/");
-    			add_location(a8, file, 198, 3, 4438);
-    			attr_dev(p9, "class", "svelte-10a1q5");
-    			add_location(p9, file, 206, 4, 4688);
+    			add_location(a8, file, 201, 2, 4399);
+    			attr_dev(p9, "class", "svelte-14k2zjs");
+    			add_location(p9, file, 209, 3, 4641);
     			attr_dev(a9, "href", "https://www.pexels.com/de-de/foto/grunes-chamaleon-auf-schwarzer-oberflache-3779926/");
-    			add_location(a9, file, 203, 3, 4577);
-    			attr_dev(p10, "class", "svelte-10a1q5");
-    			add_location(p10, file, 211, 4, 4806);
+    			add_location(a9, file, 206, 2, 4533);
+    			attr_dev(p10, "class", "svelte-14k2zjs");
+    			add_location(p10, file, 214, 3, 4754);
     			attr_dev(a10, "href", "https://www.pexels.com/de-de/foto/vintage-zeit-uhr-timer-5563414/");
-    			add_location(a10, file, 208, 3, 4714);
-    			add_location(div5, file, 186, 2, 4152);
-    			attr_dev(footer, "class", "svelte-10a1q5");
-    			add_location(footer, file, 161, 1, 3563);
-    			add_location(app, file, 90, 0, 2116);
+    			add_location(a10, file, 211, 2, 4665);
+    			add_location(div6, file, 189, 1, 4125);
+    			attr_dev(footer, "class", "svelte-14k2zjs");
+    			add_location(footer, file, 164, 0, 3560);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, app, anchor);
-    			mount_component(imageclassifier, app, null);
-    			append_dev(app, t0);
-    			append_dev(app, header);
+    			mount_component(imageclassifier, target, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, header, anchor);
     			append_dev(header, h50);
     			append_dev(header, t3);
     			append_dev(header, h3);
-    			append_dev(app, t5);
-    			append_dev(app, main);
-    			append_dev(main, div2);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, div4);
+    			append_dev(div4, div2);
     			mount_component(fileinput, div2, null);
     			append_dev(div2, t6);
     			append_dev(div2, div0);
@@ -4984,50 +4985,50 @@ var app = (function () {
     			mount_component(tooltip0, div1, null);
     			append_dev(div1, t8);
     			mount_component(tooltip1, div1, null);
-    			append_dev(main, t9);
-    			append_dev(main, div3);
+    			append_dev(div4, t9);
+    			append_dev(div4, div3);
     			mount_component(chart, div3, null);
-    			append_dev(app, t10);
-    			mount_component(snackbar, app, null);
-    			append_dev(app, t11);
-    			append_dev(app, footer);
-    			append_dev(footer, div4);
-    			append_dev(div4, h51);
-    			append_dev(div4, t13);
-    			append_dev(div4, a0);
+    			insert_dev(target, t10, anchor);
+    			mount_component(snackbar, target, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, footer, anchor);
+    			append_dev(footer, div5);
+    			append_dev(div5, h51);
+    			append_dev(div5, t13);
+    			append_dev(div5, a0);
     			append_dev(a0, p0);
-    			append_dev(div4, t15);
-    			append_dev(div4, a1);
+    			append_dev(div5, t15);
+    			append_dev(div5, a1);
     			append_dev(a1, p1);
-    			append_dev(div4, t17);
-    			append_dev(div4, a2);
+    			append_dev(div5, t17);
+    			append_dev(div5, a2);
     			append_dev(a2, p2);
-    			append_dev(div4, t19);
-    			append_dev(div4, a3);
+    			append_dev(div5, t19);
+    			append_dev(div5, a3);
     			append_dev(a3, p3);
-    			append_dev(div4, t21);
-    			append_dev(div4, a4);
+    			append_dev(div5, t21);
+    			append_dev(div5, a4);
     			append_dev(a4, p4);
-    			append_dev(div4, t23);
-    			append_dev(div4, a5);
+    			append_dev(div5, t23);
+    			append_dev(div5, a5);
     			append_dev(a5, p5);
     			append_dev(footer, t25);
-    			append_dev(footer, div5);
-    			append_dev(div5, h52);
-    			append_dev(div5, t27);
-    			append_dev(div5, a6);
+    			append_dev(footer, div6);
+    			append_dev(div6, h52);
+    			append_dev(div6, t27);
+    			append_dev(div6, a6);
     			append_dev(a6, p6);
-    			append_dev(div5, t29);
-    			append_dev(div5, a7);
+    			append_dev(div6, t29);
+    			append_dev(div6, a7);
     			append_dev(a7, p7);
-    			append_dev(div5, t31);
-    			append_dev(div5, a8);
+    			append_dev(div6, t31);
+    			append_dev(div6, a8);
     			append_dev(a8, p8);
-    			append_dev(div5, t33);
-    			append_dev(div5, a9);
+    			append_dev(div6, t33);
+    			append_dev(div6, a9);
     			append_dev(a9, p9);
-    			append_dev(div5, t35);
-    			append_dev(div5, a10);
+    			append_dev(div6, t35);
+    			append_dev(div6, a10);
     			append_dev(a10, p10);
     			current = true;
     		},
@@ -5124,14 +5125,20 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(app);
-    			destroy_component(imageclassifier);
+    			destroy_component(imageclassifier, detaching);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(header);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(main);
     			destroy_component(fileinput);
     			destroy_each(each_blocks, detaching);
     			destroy_component(tooltip0);
     			destroy_component(tooltip1);
     			destroy_component(chart);
-    			destroy_component(snackbar);
+    			if (detaching) detach_dev(t10);
+    			destroy_component(snackbar, detaching);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(footer);
     		}
     	};
 
